@@ -1,0 +1,14 @@
+input[type="submit"] {
+  background-color: #f96d00;
+  color: white;
+  border-radius: 20px;
+}
+input[type="text"] {
+  background-color: #fafafa;
+  color: black;
+  border-radius: 20px;
+}
+.form1 {
+  display: block;
+  margin: 0 auto;
+}
