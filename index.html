@@ -8,41 +8,47 @@
     <title>Vanilla Weather</title>
   </head>
   <body>
-    <div id="city-search">
-      <form>
-        <input type="text" placeholder="Search a City" />
-        <input type="submit" value="Search" />
-      </form>
-    </div>
-    <div id="current-weather">
-      <h1>☔</h1>
-      <h2>15&deg;C</h2>
-      <h3>Pretoria</h3>
-      <p>
-        Monday 15&deg;/24&deg; <br />
-        Tuesday 10&deg;/28&deg; <br />
-        Wednesday 17&deg;/30&deg; <br />
-        Thursday 20&deg;/28&deg; <br />
-        Friday 30&deg;/26&deg; <br />
-      </p>
-    </div>
+    <header id="container">
+      <div class="city-search">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            placeholder="Enter a City"
+            required
+            class="form-input"
+            id="form-input"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+    </header>
+    <main id="container">
+      <div id="current-city">
+        <h1 class="city" id="city">Pretoria</h1>
+        <p>
+          Saturday 14:08, clear <br />
+          Humidity 56%, wind 1km/h
+        </p>
+      </div>
+      <div id="current-waether">
+        <div class="weather-temp" id="weather-temp">🌞 20°C</div>
+      </div>
+    </main>
+    <footer id="container">
+      Coded by
 
-    <footer>
-      Coded by<span>
-        <a href="https://github.com/Matsafu" target="_blank">Masego Matsafu</a>
-      </span>
-      code open-sourced on
-      <span>
-        <a href="https://github.com/Matsafu/WeatherProject" target="_blank"></a
-        >and website hosted on Netlify
-      </span>
-      <span>
-        <a
-          href="https://vanillaweatherprojectapp.netlify.app/"
-          target="_blank"
-        ></a>
-      </span>
+      <a href="https://github.com/Matsafu" target="_blank">Masego Matsafu</a>
+      and
+
+      <a href="https://github.com/Matsafu/WeatherProject" target="_blank">
+        code is open-sourced on GitHub</a
+      >and
+
+      <a href="https://vanillaweatherprojectapp.netlify.app/" target="_blank"
+        >website is hosted on Netlify</a
+      >
     </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
