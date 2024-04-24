@@ -8,46 +8,54 @@
     <title>Vanilla Weather</title>
   </head>
   <body>
-    <header id="container">
-      <div class="city-search">
-        <form class="search-form" id="search-form">
-          <input
-            type="text"
-            placeholder="Enter a City"
-            required
-            class="form-input"
-            id="form-input"
-          />
-          <input type="submit" value="Search" />
-        </form>
-      </div>
-    </header>
-    <main id="container">
-      <div id="current-city">
-        <h1 class="city" id="city">Pretoria</h1>
-        <p>
-          Saturday 14:08, clear <br />
-          Humidity 56%, wind 1km/h
-        </p>
-      </div>
-      <div id="current-waether">
-        <div class="weather-temp" id="weather-temp">🌞 20°C</div>
-      </div>
-    </main>
-    <footer id="container">
-      Coded by
+    <div id="container">
+      <header>
+        <div class="city-search">
+          <form class="search-form" id="search-form">
+            <input
+              type="text"
+              placeholder="Enter a City"
+              required
+              class="form-input"
+              id="form-input"
+            />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+      </header>
+      <main>
+        <div id="current-city">
+          <h1 class="city" id="city">Pretoria</h1>
+          <p>
+            <span class="date" id="date"></span>
+            <span class="time" id="time"> 14:08</span>
+            <span class="details" id="details">cloudy</span>,
+            <br />
+            Humidity <span id="humidity"> 56% </span>, Wind
+            <span id="wind"> 1km/h</span>
+          </p>
+        </div>
+        <div class="current-weather-container">
+          <div id="weather-icon"></div>
+          <div class="weather-temp" id="weather-temp"></div>
+          <div class="weather-unit">°C</div>
+        </div>
+      </main>
+      <footer>
+        Coded by
 
-      <a href="https://github.com/Matsafu" target="_blank">Masego Matsafu</a>
-      and
+        <a href="https://github.com/Matsafu" target="_blank">Masego Matsafu</a>
+        and
 
-      <a href="https://github.com/Matsafu/WeatherProject" target="_blank">
-        code is open-sourced on GitHub</a
-      >and
+        <a href="https://github.com/Matsafu/WeatherProject" target="_blank">
+          code is open-sourced on GitHub</a
+        >and
 
-      <a href="https://vanillaweatherprojectapp.netlify.app/" target="_blank"
-        >website is hosted on Netlify</a
-      >
-    </footer>
+        <a href="https://vanillaweatherprojectapp.netlify.app/" target="_blank"
+          >website is hosted on Netlify</a
+        >
+      </footer>
+    </div>
 
     <script src="index.js"></script>
   </body>
