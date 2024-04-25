@@ -25,12 +25,12 @@ h1 {
   max-width: 600px;
   margin: 45px auto;
   border-radius: 20px;
-  padding: 30px;
+  padding: 60px;
   text-align: center;
 }
 header {
   background-color: #fcf8f3;
-  padding-top: 20px;
+  padding-top: 30px;
 
   width: 90%;
 }
@@ -63,6 +63,31 @@ footer {
   margin-top: 6px;
   font-size: 30px;
   color: #ff7e67;
+}
+.weather-app-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.forecast-date {
+  text-align: center;
+  color: #fb7777;
+  font-size: 16px;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+.forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+.forecast-temps {
+  text-align: center;
+  color: #fb7777;
+  display: flex;
+  justify-content: center;
+}
+.forecast-temp {
+  padding: 0 10px;
 }
 
 input[type="submit"] {
